@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오렌뜨</title>
+
+    <!--aos CDN-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
+
+    <link href="css/flickity-docs.css" rel="stylesheet" type="text/css">
+    <script src="js/flickity-docs.min.js"></script>
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="js/slick.css">
+    <link rel="stylesheet" type="text/css" href="js/slick-theme.css">
+
+
+
+    <!--2. 연결 시켜야 할 파일을 연결 시킨다. 복사해서 head안에 본인 css파일 위에 위치 시킨다.
+        -->
+    <!--swiper js-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <div id="top"><a href="#"><img src="images/top_banner.png" alt="탑배너"></a></div>
+
+    <!--1. 구조와 class의 이름을 알맞게 넣어준다.-->
+    <div id="menu" class="swiper mb">
+        <div id="login">
+            <ul>
+                <li><a href="#"><img src="images/ico-cart.png" alt="장바구니"></a></li>
+                <li><a href="#"><img src="images/ico-user.png" alt="마이페이지"></a></li>
+                <li><a href="#"><img src="images/ico-login.png" alt="로그인"></a></li>
+            </ul>
+        </div>
+        <div class="swiper-wrapper">
+            <div id="mb01" class="swiper-slide"><img src="images/mb01.png" alt="메인사진1"></div>
+            <div id="mb02" class="swiper-slide"><img src="images/mb02.png" alt="메인사진2"></div>
+            <div id="mb02" class="swiper-slide"><img src="images/mb03.png" alt="메인사진3"></div>
+        </div>
+        <!--화살표추가-->
+        <div class="swiper-button-next mb_next"></div>
+        <div class="swiper-button-prev mb_prev"></div>
+    </div>
+
+    <!--메뉴-->
+    <input type="checkbox" id="menuicon">
+    <label for="menuicon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <div class="sidebar">
+        <div class="logo"><img src="images/logo.png" alt="로고">
+        </div>
+        <div class="sub_menu">ORANTH</div>
+        <ul class="section">
+            <li><a href="#">about</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">magazine</a></li>
+            <li><a href="#">event</a></li>
+            <li><a href="#">community</a></li>
+        </ul>
+    </div>
+    <!--heaer E-->
+
+    <div id="small_menu">
+        <div id="small_menu_inner">
+            <dl data-aos="fade-down" data-aos-duration="1000" data-aos-delay="0">
+                <dd><a href="#"><img src="images/ladies.png" alt="여성"></a></dd>
+                <dt>LADIES</dt>
+            </dl>
+            <dl data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
+                <dd><a href="#"><img src="images/men.png" alt="남성"></a></dd>
+                <dt>MEN</dt>
+            </dl>
+            <dl data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                <dd><a href="#"><img src="images/unisex.png" alt="남녀공용"></a></dd>
+                <dt>UNISEX</dt>
+            </dl>
+            <dl data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
+                <dd><a href="#"><img src="images/acc.png" alt="기타"></a></dd>
+                <dt>ACC</dt>
+            </dl>
+            <dl data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
+                <dd><a href="#"><img src="images/sale.png" alt="할인"></a></dd>
+                <dt>SALE</dt>
+            </dl>
+            <dl data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+                <dd><a href="#"><img src="images/gallery.png" alt="갤러리"></a></dd>
+                <dt>ORANTH GALLERY</dt>
+            </dl>
+        </div>
+    </div>
+
+    <div id="membership" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
+        <a href="#"><img src="images/membership.png" alt="멤버쉽"></a>
+    </div>
+
+    <div id="md_pick">
+        <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">MD'S PICK</h1>
+        <ul>
+            <li class="banner" class="left" data-aos="slide-right" data-aos-delay="400"><a href="#"><img
+                        src="images/spring1.png" alt="봄"><span class="text">spring</span></a></li>
+            <li class="banner" class="left" data-aos="zoom-in" data-aos-delay="300"><a href="#"><img
+                        src="images/summer.png" alt="여름"><span class="text">summer</span></a></li>
+            <li class="banner" class="left" data-aos="zoom-in" data-aos-delay="300"><a href="#"><img
+                        src="images/fall.png" alt="가을"><span class="text">fall</span></a></li>
+            <li class="banner winter" data-aos="slide-left" data-aos-delay="400"><a href="#"><img
+                        src="images/winter.png" alt="겨울"><span class="text">winter</span></a></li>
+        </ul>
+    </div>
+
+    <div id="video" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+        <div id="video_inner">
+            <img src="images/video1.png" alt="비디오">
+        </div>
+    </div>
+
+    <div id="new">
+        <div id="new_inner">
+            <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">NEW ARRIVALS</h1>
+            <dl>
+                <dd data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100"><a href="#"><img
+                            src="images/newbackpack.png" alt="백팩"></a></dd>
+            </dl>
+            <dl>
+                <dt data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200"><a href="#"><img
+                            src="images/newpackpack2.png" alt="백팩"></a></dt>
+                <dt class="q1" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200"><a href="#"><img
+                            src="images/newbackpack3.png" alt="백팩"></a></dt>
+            </dl>
+        </div>
+    </div>
+
+    <div id="hot">
+        <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">HOT TREND</h1>
+        <ul>
+            <li class="left" data-aos="zoom-in"><a href="#"><img src="images/hottrend.png" alt="핫트렌드"></a></li>
+            <li class="left" data-aos="zoom-in"> <a href="#"><img src="images/howtrend2.png" alt="핫트렌드"></a></li>
+            <li class="left" data-aos="zoom-in"><a href="#"><img src="images/hottrend3.png" alt="핫트렌드"></a></li>
+        </ul>
+    </div>
+
+    <div id="earth" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
+        <a href="#"><img src="images/earth.png" alt="지구"></a>
+    </div>
+
+    <div id="material">
+        <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">ORANTH MATERIAL</h1>
+        <ul>
+            <li class="ch1" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100"><a href="#"><img
+                        src="images/being.png" alt="천">
+                    <div class="hoverbox">
+                        <p>친환경<br>being eco-friendly</p>
+                        <a href="#" class="button1">VIEW MORE</a>
+                    </div>
+                </a></li>
+            <li class="ch1" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200"><a href="#"><img
+                        src="images/vegetable.png" alt="오렌지">
+                    <div class="hoverbox">
+                        <p>식물성 가죽<br>vegetable leather</p>
+                        <a href="#" class="button1">VIEW MORE</a>
+                    </div>
+                </a></li>
+            <li class="ch2" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300"><a href="#"><img
+                        src="images/sustainability.png" alt="실">
+                    <div class="hoverbox">
+                        <p>지속성<br>sustainability</p>
+                        <a href="#" class="button1">VIEW MORE</a>
+                    </div>
+                </a></li>
+        </ul>
+    </div>
+
+    <div id="event">
+
+        <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">EVENT</h1>
+        <div class="carousel main-carousel main_banner" data-aos="fade-down" data-aos-duration="1000"
+            data-aos-delay="300">
+            <div class="carousel-cell">
+                <a href="#"><img src="images/event3.png" alt="이벤트"></a>
+                <div class="black_box"></div>
+            </div>
+
+            <div class="carousel-cell">
+                <a href="#"><img src="images/event2.png" alt="이벤트"></a>
+                <div class="black_box"></div>
+            </div>
+
+            <div class="carousel-cell">
+                <a href="#"><img src="images/event1.png" alt="이벤트"></a>
+                <div class="black_box"></div>
+            </div>
+
+            <div class="carousel-cell">
+                <a href="#"><img src="images/event4.png" alt="이벤트"></a>
+                <div class="black_box"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="magazine">
+        <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">MAGAZINE</h1>
+        <div id="box">
+            <ul>
+                <li class="p1" data-aos="fade-down" data-aos-delay="0"><a href="#"><img src="images/magazine1.png"
+                            alt="잡지"></a></li>
+                <li class="p1" data-aos="fade-left" data-aos-delay="100"><a href="#"><img src="images/magazine2.png"
+                            alt="잡지"></a></li>
+                <li class="p1" data-aos="fade-right" data-aos-delay="200"><a href="#"><img src="images/magazine3.png"
+                            alt="잡지"></a></li>
+                <li class="p2" data-aos="fade-up-left" data-aos-delay="300"><a href="#"><img src="images/magazine4.png"
+                            alt="잡지"></a></li>
+                <li class="p2" data-aos="fade-up-right" data-aos-delay="400"><a href="#"><img src="images/magazine5.png"
+                            alt="잡지"></a></li>
+                <li class="p2" data-aos="fade-down-left" data-aos-delay="500"><a href="#"><img
+                            src="images/magazine6.png" alt="잡지"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="insta">
+        <div id="insta_inner">
+            <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">INSTARGRAM</h1>
+            <h3 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200"><a href="#">follow us</a></h3>
+            <section class="regular slider" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
+                <div><img src="images/insta1.png" alt="인스타"></div>
+                <div><img src="images/insta2.png" alt="인스타"></div>
+                <div><img src="images/insta3.png" alt="인스타"></div>
+                <div><img src="images/insta4.png" alt="인스타"></div>
+                <div><img src="images/insta5.png" alt="인스타"></div>
+                <div><img src="images/insta6.png" alt="인스타"></div>
+                <div><img src="images/insta7.png" alt="인스타"></div>
+                <div><img src="images/insta8.png" alt="인스타"></div>
+                <div><img src="images/insta9.png" alt="인스타"></div>
+                <div><img src="images/insta10.png" alt="인스타"></div>
+                <div><img src="images/insta11.png" alt="인스타"></div>
+                <div><img src="images/insta12.png" alt="인스타"></div>
+                <div><img src="images/insta13.png" alt="인스타"></div>
+                <div><img src="images/insta14.png" alt="인스타"></div>
+            </section>
+        </div>
+    </div>
+
+    <div id="info">
+        <ul>
+            <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100"><a href="#"><img
+                        src="images/infomation.png" alt="고객센터"></a></li>
+            <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200"><a href="#"><img
+                        src="images/shop.png" alt="샵"></a></li>
+        </ul>
+    </div>
+
+    <div id="footer">
+        <div id="footer_inner">
+            <div class="text">
+                <p class="p1">상호명: 오렌뜨 대표자: 김나리 주소: 부산광역시 중구 광복로85<br>
+                    사업자록번호: 214-85-57364 통신판매업신고: 제2022호-부산중구-0085호<br>
+                    개인정보보호 책임자: 김나리 이메일주소:oranth@korea.com</p>
+
+                <p class="p2">COPYRIGHT ⓒ 2022 ORANTH ALL RIGHTS RESERVED</p>
+                <ul>
+                    <li><a href="#"><img src="images/kakao.png" alt="카카오톡"></a></li>
+                    <li><a href="#"><img src="images/instargram.png" alt="인스타그램"></a></li>
+                    <li><a href="#"><img src="images/youtube.png" alt="유튜브"></a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="images/footer_logo.png" alt="로고">
+            </div>
+        </div>
+    </div>
+
+    <div class="top">
+        <a href="#top">∧</a>
+        <a href="#footer">∨</a>
+
+        <script>
+            var swiper = new Swiper(".mb", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },//화살표를 작동하게 하는 옵션.
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },//도트부분을 작동하게 하는 옵션.
+                autoplay: {
+                    delay: 3000,//몇초뒤에 슬라이드가 넘어갈지 설정. 1000=1초
+                    disableOnInteraction: false,
+                },
+                loop: true,//슬라이드무한반복
+                //옵션추가시 이걸 지우고 넣어주세요.
+            });//mb의 옵션 끝
+
+            /*이벤트 스와이퍼*/
+            var elem = document.querySelector('.main-carousel');
+            var flkty = new Flickity(elem, {
+                wrapAround: true,//무한 루프 여부
+                cellAlign: 'center',
+                contain: true,
+                autoPlay: true,//자동재생여부
+                fullscreen: false,
+            });
+
+        </script>
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            $(document).on('ready', function () {
+
+                $(".regular").slick({
+                    autoplay: true,//자동 갤러리 구문(삭제시 수동으로 변함.)
+                    autoplaySpeed: 2000,//자동 갤러리가 넘어가는 시간
+
+                    infinite: true,
+                    slidesToShow: 4,//보여지는 갤러리 수
+                    slidesToScroll: 4,//넘어가는 갤러리 수
+                    speed: 3000,//다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간
+                    pauseOnHover: true, /* 마우스 호버시 슬라이드 이동 멈춤 */
+                    responsive: [
+                        { /* 반응형웹*/
+                            breakpoint: 1024, /* 기준화면사이즈 */
+                            settings: { slidesToShow: 2 } /* 사이즈에 적용될 설정 */
+                        },
+                        { /* 반응형웹*/
+                            breakpoint: 459, /* 기준화면사이즈 */
+                            settings: { slidesToShow: 1 } /* 사이즈에 적용될 설정 */
+                        },
+                    ]
+                });
+            });
+
+
+            $(function () {
+                $('a[href*="#"]:not([href="#"])').click(function () {
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        if (target.length) {
+                            $('html, body').animate({
+                                scrollTop: target.offset().top
+                            }, 500);//움직이는 시간 조정
+                            return false;
+                        }
+                    }
+                });
+            });
+
+            AOS.init();
+        </script>
+</body>
+
+</html>
