@@ -19,9 +19,12 @@ ul,ol{
 body{
     font-family: 'NanumSquare';
     font-size: 14px;
-    min-width: 1450px;
+    min-width: 1600px;
+	overflow-x: hidden;
 }
-
+html{
+	overflow-x: hidden;
+}
 #top img{
     width: 100%;
     display: block;    
@@ -160,9 +163,11 @@ margin-bottom: 100px;
 #small_menu_inner{
 	width: 1350px;
 	margin: auto;
+
 }
 #small_menu{
 	margin-top: 100px;
+	height: 200px;
 }
 
 #membership img{
@@ -512,8 +517,8 @@ display:block;}
 	position:absolute;
 	top:50%;
 	left:50%;
-	width:95%;
-	height:95%;
+	width:85%;
+	height:85%;
 	transform:translate(-50%,-50%);
 	transition:all 0.8s;}
 .banner::before{border-top:2px solid #fff;border-bottom:2px solid #fff;
@@ -522,5 +527,5 @@ width:0;}
 height:0;}
 
 .banner:hover span.text{display:block;}
-.banner:hover::before{width:95%;}
-.banner:hover::after{height:95%;}
+.banner:hover::before{width:85%;}
+.banner:hover::after{height:85%;}
