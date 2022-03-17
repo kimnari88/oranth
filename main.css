@@ -196,10 +196,13 @@ float: left;
 	 background: url(images/video.png) no-repeat top center;
 	 clear: both;
 	 margin-bottom: 100px;
+	 height: 600px;
+	
  }
  #video_inner{
-	 width: 1350px;
+	 width: 1250px;
 	 margin: auto;
+	 padding-top: 87px;
  }
  #video img{
 	 padding-top: 50px;
@@ -295,7 +298,7 @@ float: left;
 	  
  }
   #material ul {
-	  height: 750px;
+	  height: 650px;
   }
 
  #material ul li{
